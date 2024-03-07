@@ -16,8 +16,8 @@ const NavBar = () => {
   };
 
   return (
-    <div className="w-full ">
-      <div className=" md:flexjustify-between p-5 md:mx-10 items-center">
+    <div className="w-full">
+      <div className=" md:flex justify-between p-5 md:mx-10 items-center">
         {/* name */}
         <div className="flex justify-between items-center">
           {/* Hamburger icons */}
@@ -95,7 +95,7 @@ const NavBar = () => {
       </div>
       {/* Overlay */}
       {!nav ? (
-        <div className="md:hidden fixed top-0 left-0 h-[100%] bg-white text-black w-[80%] flex flex-col pt-36 pl-7 gap-y-10 font-bold text-3xl ">
+        <div className="md:hidden fixed top-0 left-0 h-[100%] bg-white text-black w-[80%] flex flex-col pt-36 pl-7 gap-y-8 font-bold text-2xl ">
           <Link
             href={"/"}
             className={`cursor-pointer ${
