@@ -98,41 +98,56 @@ const NavBar = () => {
         <div className="md:hidden fixed top-0 left-0 h-[100%] bg-white text-black w-[80%] flex flex-col pt-36 pl-7 gap-y-10 font-bold text-3xl ">
           <Link
             href={"/"}
-            onClick={() => {
-              setNav(!nav);
-            }}
+            className={`cursor-pointer ${
+              activeLink === "Treatments"
+                ? "bg-[#33364A] px-4   py-2 rounded-3xl text-white"
+                : "text-black px-4   py-2"
+            }`}
+            onClick={() => handleLinkClick("Treatments")}
           >
             Treatments
           </Link>
           <Link
             href={"/"}
-            onClick={() => {
-              setNav(!nav);
-            }}
+            className={`cursor-pointer ${
+              activeLink === "Consult"
+                ? "bg-[#33364A] px-4   py-2 rounded-3xl text-white"
+                : "text-black px-4   py-2"
+            }`}
+            onClick={() => handleLinkClick("Consult")}
           >
             Consult with a doctor
           </Link>
           <Link
             href={"/"}
-            onClick={() => {
-              setNav(!nav);
-            }}
+            className={`cursor-pointer ${
+              activeLink === "Learn"
+                ? "bg-[#33364A] px-4   py-2 rounded-3xl text-white"
+                : "text-black px-4   py-2"
+            }`}
+            onClick={() => handleLinkClick("Learn")}
+          >
+            Learn
+          </Link>
+          <Link
+            href={"/"}
+            className={`cursor-pointer ${
+              activeLink === "Contact"
+                ? "bg-[#33364A] px-4   py-2 rounded-3xl text-white"
+                : "text-black px-4   py-2"
+            }`}
+            onClick={() => handleLinkClick("Contact")}
           >
             Contact us
           </Link>
           <Link
             href={"/"}
-            onClick={() => {
-              setNav(!nav);
-            }}
-          >
-            Skills
-          </Link>
-          <Link
-            href={"/"}
-            onClick={() => {
-              setNav(!nav);
-            }}
+            className={`cursor-pointer ${
+              activeLink === "About"
+                ? "bg-[#33364A] px-4   py-2 rounded-3xl text-white"
+                : "text-black px-4   py-2"
+            }`}
+            onClick={() => handleLinkClick("About")}
           >
             About us
           </Link>
