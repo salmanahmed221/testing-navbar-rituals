@@ -13,6 +13,7 @@ const NavBar = () => {
   // Function to handle click event on links
   const handleLinkClick = (link: any) => {
     setActiveLink(link);
+    setNav(!nav);
   };
 
   return (
